@@ -1,9 +1,7 @@
 import React from "react";
-import NavanshPhoto from "../Team/Navansh.jpg";
 import PratyushPhoto from "../Team/Pratyush.jpeg";
-import AdheeyaanPhoto from "../Team/Adheeyaan.jpg";
 
-const AboutUs = () => {
+const AboutMe = () => {
   return (
     <div
       style={{
@@ -25,7 +23,7 @@ const AboutUs = () => {
           boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
         }}
       >
-        {/* SMALL WHITE BOX — MEET THE TEAM */}
+        {/* SMALL WHITE BOX — ABOUT ME */}
         <div
           style={{
             backgroundColor: "white",
@@ -33,6 +31,7 @@ const AboutUs = () => {
             borderRadius: "15px",
             boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
             marginBottom: "2rem",
+            textAlign: "center",
           }}
         >
           <h1
@@ -40,53 +39,23 @@ const AboutUs = () => {
               fontSize: "2.5rem",
               fontWeight: "bold",
               marginBottom: "1.5rem",
-              textAlign: "center",
             }}
           >
-            Meet the Team
+            About Me
           </h1>
 
           <div
             style={{
               display: "flex",
               justifyContent: "center",
-              gap: "2rem",
-              flexWrap: "wrap",
             }}
           >
-            {/* Navansh */}
             <div
               style={{
                 backgroundColor: "white",
                 padding: "1rem",
                 borderRadius: "12px",
-                width: "200px",
-                boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
-                textAlign: "center",
-              }}
-            >
-              <img
-                src={NavanshPhoto}
-                alt="Navansh"
-                style={{
-                  width: "180px",
-                  height: "180px",
-                  borderRadius: "12px",
-                  objectFit: "cover",
-                }}
-              />
-              <p style={{ marginTop: "0.5rem", fontWeight: "bold" }}>
-                Navansh Goel
-              </p>
-            </div>
-
-            {/* Pratyush */}
-            <div
-              style={{
-                backgroundColor: "white",
-                padding: "1rem",
-                borderRadius: "12px",
-                width: "200px",
+                width: "220px",
                 boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
                 textAlign: "center",
               }}
@@ -95,40 +64,14 @@ const AboutUs = () => {
                 src={PratyushPhoto}
                 alt="Pratyush"
                 style={{
-                  width: "180px",
-                  height: "180px",
+                  width: "200px",
+                  height: "200px",
                   borderRadius: "12px",
                   objectFit: "cover",
                 }}
               />
               <p style={{ marginTop: "0.5rem", fontWeight: "bold" }}>
                 Pratyush Dalmia
-              </p>
-            </div>
-
-            {/* Adheeyaan */}
-            <div
-              style={{
-                backgroundColor: "white",
-                padding: "1rem",
-                borderRadius: "12px",
-                width: "200px",
-                boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
-                textAlign: "center",
-              }}
-            >
-              <img
-                src={AdheeyaanPhoto}
-                alt="Adheeyaan"
-                style={{
-                  width: "180px",
-                  height: "180px",
-                  borderRadius: "12px",
-                  objectFit: "cover",
-                }}
-              />
-              <p style={{ marginTop: "0.5rem", fontWeight: "bold" }}>
-                Adheeyaan Pareek
               </p>
             </div>
           </div>
@@ -145,35 +88,43 @@ const AboutUs = () => {
           }}
         >
           <p style={{ lineHeight: "1.6", fontSize: "1.1rem" }}>
-            We are a group of students who study at Mayo College Ajmer and love
-            technology. We aim to lead the world and make a mark that will be
-            remembered for centuries to come. This project originally started as
-            just an idea for WRO, and over time it transformed into a full
-            software system with AI and ML implemented into it, capable of:
+            My name is Pratyush, a student at Mayo College Ajmer who loves
+            technology, robotics, AI, and innovation. My dream is to build
+            solutions that create real impact and leave a mark that lasts for
+            generations.
+            <br /><br />
+            MEDIREADY originally started as an idea for WRO, but over time it
+            evolved into a full-fledged AI-powered medical system that is
+            capable of:
+            <br /><br />
+            <strong>• Analysing symptoms</strong>
             <br />
+            <strong>• Detecting injuries</strong>
             <br />
-            <strong>• Analysing symptoms</strong>  
+            <strong>• Monitoring vital signs</strong>
             <br />
-            <strong>• Detectig various injuries</strong>  
+            <strong>• Analysing radiology reports</strong>
             <br />
-            <strong>• Monitoring vital signs</strong>  
+            <strong>• Voice-based medical assistance</strong>
             <br />
-            <strong>• Analysing radiology reports</strong>  
-            <br />
-            <strong>• Voice-based medical assistantance</strong>  
-            <br />
-            <strong>• Chat-based medical assistantance</strong>
+            <strong>• Chat-based medical assistance</strong>
           </p>
 
-          <p style={{ marginTop: "1rem", lineHeight: "1.6", fontSize: "1.1rem" }}>
-            We hope to continue building projects like this—projects that will
-            hopefully be used in the real world but most importantly none of this would have been
-            possible without our mentors: <strong>Mr. Akash Deep Rawat</strong> and{" "}
+          <p
+            style={{
+              marginTop: "1rem",
+              lineHeight: "1.6",
+              fontSize: "1.1rem",
+            }}
+          >
+            This project represents my passion for building real-world solutions.
+            And none of this would have been possible without the support of my
+            mentors: <strong>Mr. Akash Deep Rawat</strong> and{" "}
             <strong>Mr. Chirag Saraswat</strong>.
           </p>
         </div>
 
-        {/* SMALL WHITE BOX — OUR MENTORS (TEXT ONLY) */}
+        {/* SMALL WHITE BOX — MY MENTORS */}
         <div
           style={{
             backgroundColor: "white",
@@ -190,7 +141,7 @@ const AboutUs = () => {
               textAlign: "center",
             }}
           >
-            Our Mentors
+            My Mentors
           </h2>
 
           <p
@@ -200,11 +151,12 @@ const AboutUs = () => {
               lineHeight: "1.6",
             }}
           >
-            We sincerely thank our mentors  
+            I sincerely thank  
             <strong> Mr. Akash Deep Rawat </strong>  
             and  
             <strong> Mr. Chirag Saraswat </strong>  
-            for their constant guidance, support, and motivation in turning this dream of ours to a reality.
+            for their constant support, guidance, and motivation in turning this
+            vision into reality.
           </p>
         </div>
       </div>
@@ -212,4 +164,5 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutMe;
+
